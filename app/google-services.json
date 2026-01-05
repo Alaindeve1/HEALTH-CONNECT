@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "622948641566",
+    "project_id": "telehealth-4b88c",
+    "storage_bucket": "telehealth-4b88c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622948641566:android:a6c53ad70972b9d35fb70f",
+        "android_client_info": {
+          "package_name": "rw.ac.auca.finalprojectgroupfa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApIFvFfgQCTS3MOUV5aj60sITZEd2ASaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
