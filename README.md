@@ -1,22 +1,4 @@
 ## Telehealth & Remote Consultation Hub
-Prepared by: Group FA
-
-
-| Student ID | Full Name                             |
-| ---------: | ------------------------------------- |
-|      25599 | Mizeromahire Celse                    |
-|      26519 | Nyarwaya Gisabo Gadiella              |
-|      27148 | Nkumbuyedeni Nsanzimfura Enock        |
-|      26442 | Ndizeye Alain                         |
-|      25437 | Kakwezi Peace                         |
-|      25900 | Effata Mushi – Muntu – Nkana Don Beni |
-|      25696 | Mushimiyimana Michelline              |
-|      25982 | Mucyo Kevin                           |
-|      26153 | Sakindi Manywa Ghislain               |
-|      25286 | Nzayisenga Bernard                    |
-|      25797 | Ineza Tania Horline                   |
-
-
 
 ### Description
 
