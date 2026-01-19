@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/card_padding">
+
+        <!-- Header Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/spacing_small">
+
+            <TextView
+                android:id="@+id/patientName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Patient Name"
+                android:textAppearance="@style/TextAppearance.App.TitleMedium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/priorityBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ROUTINE"
+                    android:textAppearance="@style/TextAppearance.App.LabelSmall"
+                    android:textColor="@android:color/white"
+                    android:paddingHorizontal="@dimen/spacing_small"
+                    android:paddingVertical="@dimen/spacing_tiny"
+                    android:layout_marginEnd="@dimen/spacing_tiny"
+                    android:background="@drawable/badge_background" />
+
+                <TextView
+                    android:id="@+id/statusBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACTIVE"
+                    android:textAppearance="@style/TextAppearance.App.LabelSmall"
+                    android:textColor="@android:color/white"
+                    android:paddingHorizontal="@dimen/spacing_small"
+                    android:paddingVertical="@dimen/spacing_tiny"
+                    android:background="@drawable/badge_background" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Request Details -->
+        <TextView
+            android:id="@+id/requestDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reason for consultation..."
+            android:textAppearance="@style/TextAppearance.App.BodyMedium"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <!-- Request Time -->
+        <TextView
+            android:id="@+id/requestTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request time"
+            android:textAppearance="@style/TextAppearance.App.Caption"
+            android:layout_marginBottom="@dimen/spacing_medium" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/acceptButton"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accept"
+                android:backgroundTint="@color/green"
+                android:layout_marginEnd="@dimen/spacing_tiny"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/declineButton"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Decline"
+                android:textColor="?attr/colorError"
+                android:strokeColor="?attr/colorError"
+                android:layout_marginStart="@dimen/spacing_tiny"
+                android:layout_marginEnd="@dimen/spacing_tiny"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/startButton"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start"
+                android:layout_marginEnd="@dimen/spacing_tiny"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/completeButton"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Complete"
+                android:backgroundTint="@color/orange"
+                android:layout_marginStart="@dimen/spacing_tiny"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/detailsButton"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Details"
+                android:layout_marginStart="@dimen/spacing_tiny" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
