@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Medical Cross with Heart - White -->
+    <group
+        android:translateX="54"
+        android:translateY="54">
+        
+        <!-- Heart shape outline -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M0,-18
+                C-5,-18 -9,-14 -9,-9
+                C-9,-4 -5,0 0,6
+                C5,0 9,-4 9,-9
+                C9,-14 5,-18 0,-18
+                Z" />
+        
+        <!-- Medical Cross -->
+        <!-- Vertical bar -->
+        <path
+            android:fillColor="#2196F3"
+            android:pathData="M-3,-12
+                L-3,12
+                L3,12
+                L3,-12
+                Z" />
+        
+        <!-- Horizontal bar -->
+        <path
+            android:fillColor="#2196F3"
+            android:pathData="M-12,-3
+                L-12,3
+                L12,3
+                L12,-3
+                Z" />
+        
+        <!-- Plus sign decoration (smaller) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M-1.5,-8
+                L-1.5,8
+                L1.5,8
+                L1.5,-8
+                Z" />
+        
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M-8,-1.5
+                L-8,1.5
+                L8,1.5
+                L8,-1.5
+                Z" />
+    </group>
+    
+    <!-- Circular background for icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,54m-28,0a28,28 0,1,1 56,0a28,28 0,1,1 -56,0"
+        android:fillAlpha="0.9" />
+    
+    <!-- Medical symbol - Simplified -->
+    <group
+        android:translateX="54"
+        android:translateY="54">
+        
+        <!-- Stethoscope inspired design -->
+        <path
+            android:fillColor="#2196F3"
+            android:strokeColor="#2196F3"
+            android:strokeWidth="2"
+            android:pathData="M0,-15
+                C-8,-15 -15,-8 -15,0
+                C-15,8 -8,15 0,15
+                C8,15 15,8 15,0
+                C15,-8 8,-15 0,-15
+                Z" />
+        
+        <!-- Inner medical cross -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M-2,-10
+                L-2,10
+                L2,10
+                L2,-10
+                Z" />
+        
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M-10,-2
+                L-10,2
+                L10,2
+                L10,-2
+                Z" />
+    </group>
+</vector>
