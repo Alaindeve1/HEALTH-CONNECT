@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- This will be the orange color we defined in colors.xml -->
+    <solid android:color="@color/orange" />
+
+    <!-- This makes the corners rounded -->
+    <corners android:radius="8dp" />
+
+</shape>
