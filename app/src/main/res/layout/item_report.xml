@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/card_padding">
+
+        <TextView
+            android:id="@+id/patientNameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Patient Name"
+            android:textAppearance="@style/TextAppearance.App.TitleMedium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/downloadButton"/>
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date: 2023-10-27"
+            android:textAppearance="@style/TextAppearance.App.BodyMedium"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/patientNameText"
+            app:layout_constraintEnd_toStartOf="@+id/downloadButton"/>
+
+        <TextView
+            android:id="@+id/diagnosisText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Reason: Fever"
+            android:textAppearance="@style/TextAppearance.App.BodyMedium"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateText"
+            app:layout_constraintEnd_toStartOf="@+id/downloadButton"/>
+
+        <ImageButton
+            android:id="@+id/downloadButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_download"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Download Report"
+            app:tint="?attr/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

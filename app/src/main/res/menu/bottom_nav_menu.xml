@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_patients"
+        android:icon="@drawable/ic_people"
+        android:title="@string/nav_patients"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_consultations"
+        android:icon="@drawable/ic_consultation"
+        android:title="@string/nav_consultations"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_reports"
+        android:icon="@drawable/ic_assessment"
+        android:title="@string/nav_reports"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/menu_profile"
+        app:showAsAction="ifRoom" />
+</menu>
