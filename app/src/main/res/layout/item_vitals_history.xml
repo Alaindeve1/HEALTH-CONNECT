@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/card_padding"
+        android:background="?android:attr/selectableItemBackground">
+
+        <!-- Header Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/spacing_small">
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date"
+                android:textAppearance="@style/TextAppearance.App.TitleSmall" />
+
+            <TextView
+                android:id="@+id/syncStatusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Synced"
+                android:textAppearance="@style/TextAppearance.App.LabelSmall"
+                android:textColor="@android:color/white"
+                android:paddingHorizontal="@dimen/spacing_small"
+                android:paddingVertical="@dimen/spacing_tiny"
+                android:background="@drawable/sync_status_background" />
+
+        </LinearLayout>
+
+        <!-- Vitals Summary -->
+        <TextView
+            android:id="@+id/vitalsSummaryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vitals summary"
+            android:textAppearance="@style/TextAppearance.App.BodyMedium"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <!-- Symptoms (conditionally visible) -->
+        <TextView
+            android:id="@+id/symptomsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Symptoms: ..."
+            android:textAppearance="@style/TextAppearance.App.Caption"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
