@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add_vitals"
+        android:title="Add Vitals"
+        android:icon="@drawable/ic_add_vitals"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_request_consultation"
+        android:title="Request Consultation"
+        android:icon="@drawable/ic_request_consultation"
+        app:showAsAction="ifRoom"/>
+
+</menu>
